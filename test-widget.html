@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentforce Widget - Final Verification</title>
+  <style>
+    /* 
+      HOST PAGE STYLES 
+      These are designed to conflict with your widget to prove the isolation works.
+    */
+    body {
+      margin: 0;
+      padding: 0;
+      /* Using a serif font to prove your widget doesn't inherit it */
+      font-family: 'Times New Roman', serif; 
+      /* Using a dark background to prove your widget handles transparency correctly */
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .content {
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    /* This button style is UGLY on purpose to ensure it doesn't leak into your widget */
+    button.host-button {
+      background: red; 
+      color: yellow;
+      padding: 20px;
+      font-size: 20px;
+      border: 5px solid yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1> Widget Verification Page</h1>
+    <p>The widget should appear in the bottom right.</p>
+    <p><strong>Success Criteria:</strong></p>
+    <ul style="text-align: left; display: inline-block;">
+      <li>Widget font should be San Francisco / Sans-serif (Not Times New Roman)</li>
+      <li>Buttons inside widget should be Blue (Not Red/Yellow)</li>
+      <li>Inputs should look clean (No gray default borders)</li>
+    </ul>
+    <br><br>
+    <button class="host-button">I am a Host Button</button>
+  </div>
+
+  <!-- 
+    IMPORT THE WIDGET 
+    Pointing to the folder you just built
+  -->
+  <script src="./dist-widget/agentforce-widget.iife.js"></script>
+
+</body>
+</html>

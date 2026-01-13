@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentforce Widget - Embed Example</title>
+  <style>
+    /* This is the HOST PAGE styling - NOT the widget */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: white;
+    }
+    .demo-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+    p {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+    .instructions {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: left;
+      margin-top: 40px;
+    }
+    .instructions h2 {
+      margin-bottom: 15px;
+      font-weight: normal;
+    }
+    .instructions code {
+      display: block;
+      background: rgba(0,0,0,0.3);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      overflow-x: auto;
+      margin: 10px 0;
+      font-family: 'Courier New', monospace;
+    }
+    .note {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .note strong {
+      color: #90EE90;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-content">
+    <h1>🤖 Agentforce Widget Demo</h1>
+    <p>This page demonstrates the embedded Agentforce chat widget.<br>Look at the bottom of the screen!</p>
+    
+    <div class="instructions">
+      <h2>How to Embed on Your Website</h2>
+      <p>Add just <strong style="color: #90EE90;">ONE line</strong> before the closing &lt;/body&gt; tag:</p>
+      <code>
+&lt;script src="https://your-cdn.com/agentforce-widget.iife.js"&gt;&lt;/script&gt;
+      </code>
+      
+      <div class="note">
+        <strong>✓ Self-contained:</strong> The widget includes all styles and dependencies in one file.
+      </div>
+    </div>
+
+    <div class="instructions" style="margin-top: 20px;">
+      <h2>Test Area</h2>
+      <p>This page has custom styling (Georgia font, purple gradient). The widget should look exactly like the development version!</p>
+      <button style="padding: 12px 24px; background: white; color: #667eea; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-family: Georgia, serif;">
+        This button uses the page's styles
+      </button>
+    </div>
+  </div>
+
+  <!-- EMBED THE WIDGET - Just ONE line needed! -->
+  <script src="./dist-widget/agentforce-widget.iife.js"></script>
+</body>
+</html>
