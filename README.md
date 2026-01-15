@@ -34,7 +34,7 @@ chmod +x setup.sh
 #### 1. Clone the repository
 ```bash
 git clone https://github.com/AnastasiaProkaieva/design-widget-bar.git
-cd Criteo
+cd design-widget-bar
 ```
 
 #### 2. Install dependencies
